@@ -39,3 +39,18 @@ test("score spare", () => {
   var actual = game.scoreSpare(frame, nextFrame);
   expect(actual).toBe(expected);
 });
+
+test("is strike", () => {
+  var frame = [10, 0];
+  var expected = true;
+  var actual = game.isStrike(frame);
+  expect(actual).toBe(expected);
+});
+
+test("score strike", () => {
+  var frame = [10, 0];
+  var nextFrame = [7, 2];
+  var expected = 19;
+  var actual = game.scoreStrike(frame, nextFrame);
+  expect(actual).toBe(expected);
+});

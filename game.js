@@ -12,3 +12,11 @@
 // var frames = [
 //  [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 10, 10],
 // ]
+
+function scoreFrame(frame) {
+  return frame[0] + frame[1];
+}
+
+module.exports = {
+  scoreFrame
+};

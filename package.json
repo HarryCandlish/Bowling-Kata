@@ -1,0 +1,11 @@
+{
+  "license": "license",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "jest --watch --noStackTrace"
+  },
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}

@@ -31,3 +31,11 @@ test("is spare", () => {
   var actual = game.isSpare(frame);
   expect(actual).toBe(expected);
 });
+
+test("score spare", () => {
+  var frame = [6, 4];
+  var nextFrame = [5, 4];
+  var expected = 15;
+  var actual = game.scoreSpare(frame, nextFrame);
+  expect(actual).toBe(expected);
+});

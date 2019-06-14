@@ -41,8 +41,14 @@ function isSpare(frame) {
   if (frame[0] != 10 && frame[0] + frame[1] === 10) return true;
 }
 
+function scoreSpare(frame, nextFrame) {
+  if (frame[0] != 10 && frame[0] + frame[1] === 10)
+    return frame[0] + frame[1] + nextFrame[0];
+}
+
 module.exports = {
   scoreFrame,
   sumOfFrames,
-  isSpare
+  isSpare,
+  scoreSpare
 };

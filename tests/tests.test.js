@@ -24,3 +24,10 @@ test("add all frames", () => {
   var actual = game.sumOfFrames(frames);
   expect(actual).toBe(expected);
 });
+
+test("is spare", () => {
+  var frame = [6, 4];
+  var expected = true;
+  var actual = game.isSpare(frame);
+  expect(actual).toBe(expected);
+});

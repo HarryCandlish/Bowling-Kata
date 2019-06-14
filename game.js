@@ -37,7 +37,12 @@ function sumOfFrames(frames) {
   }, 0);
 }
 
+function isSpare(frame) {
+  if (frame[0] != 10 && frame[0] + frame[1] === 10) return true;
+}
+
 module.exports = {
   scoreFrame,
-  sumOfFrames
+  sumOfFrames,
+  isSpare
 };

@@ -24,11 +24,16 @@ function scoreStrike(frame, nextFrame) {
   if (isStrike(frame)) return frame[0] + nextFrame[0] + nextFrame[1];
 }
 
+function isDoubleStrike(frame, nextFrame) {
+  return frame[0] === 10 && nextFrame[0] === 10;
+}
+
 module.exports = {
   scoreFrame,
   sumOfFrames,
   isSpare,
   scoreSpare,
   isStrike,
-  scoreStrike
+  scoreStrike,
+  isDoubleStrike
 };

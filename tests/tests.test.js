@@ -54,3 +54,11 @@ test("score strike", () => {
   var actual = game.scoreStrike(frame, nextFrame);
   expect(actual).toBe(expected);
 });
+
+test("score two strikes in succession", () => {
+  var frame = [10, 0];
+  var nextFrame = [10];
+  var expected = true;
+  var actual = game.isDoubleStrike(frame, nextFrame);
+  expect(actual).toBe(expected);
+});
